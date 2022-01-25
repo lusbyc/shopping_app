@@ -1,8 +1,4 @@
 
-from itertools import count
-from traceback import print_exception
-
-
 def print_inventory(inventory):
     for item in inventory:            
         print(f"{item.name}  ${item.price}  {item.quantity}")
