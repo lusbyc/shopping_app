@@ -64,6 +64,7 @@ while keep_going.lower() == 'y':
             item.quantity = quantity
             add_to_cart(item, cart)
         elif user_selection.lower() in item.name.lower(): # sets quantity added to cart to the amount in inventory
+            print(f"Due to popular demand there is limited inventory of the {item.name}. {item.inventory} has been added to the cart instead of the {quantity} requested.")
             item.quantity = item.inventory
             add_to_cart(item, cart)
     keep_going = input("\nThat's a great choice! Enter 'y' to add another item: ")
